@@ -1,4 +1,4 @@
-# FLUGHT BOOKING APP
+# FLIGHT BOOKING APP
 
 This application can be used to book flights. It is based on ruby 3.0.3, rails 7.0.4 and sqlite.
 

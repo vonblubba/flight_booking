@@ -7,6 +7,10 @@ App server can be started with:
 `bundle install`
 `rails s`
 
+Or it can be run with docker:
+
+`docker compose up`
+
 App server is accessible at http://127.0.0.1:3000
 
 Exmple api calls:

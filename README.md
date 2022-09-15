@@ -1,24 +1,26 @@
-# README
+# FLUGHT BOOKING APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application can be used to book flights. It is based on ruby 3.0.3, rails 7.0.4 and sqlite.
 
-Things you may want to cover:
+App server can be started with:
 
-* Ruby version
+`bundle install`
+`rails s`
 
-* System dependencies
+App server is accessible at http://127.0.0.1:3000
 
-* Configuration
+Exmple api calls:
 
-* Database creation
+Session start:
+```
+curl \
+-d '{"email": "oscar.riva@gmail.com", "password":"pwdprova"}' \
+-H 'Content-Type: application/json' http://localhost:3000/api/v1/authenticate
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+curl \
+-H 'Content-Type: application/json' \
+-H 'Authorization: <token>' \
+http://localhost:3000/api/v1/passengers
+```
